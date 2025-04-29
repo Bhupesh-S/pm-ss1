@@ -1,12 +1,9 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-
 export default defineConfig({
-  root: 'frontend', // 👈 Point to your frontend directory
+  root: 'frontend',  // Points to your frontend directory
   plugins: [react()],
-  base: './', // Good for relative asset paths in production
+  base: './',  // Ensures the correct path resolution in production
   build: {
-    outDir: 'dist',
+    outDir: 'dist',  // Build output directory
   },
   server: {
     host: true,
